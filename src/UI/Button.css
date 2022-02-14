@@ -1,0 +1,33 @@
+
+.component-body-container {
+    padding: 20px;
+  }
+  .input-control {
+    width: 300px;
+    min-width: 100px;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    outline: none;
+  }
+  .custom-btn {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 80px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .add-btn {
+    background: #d8f0d8;
+    color: rgb(19, 18, 18);
+  }
+  .closed-btn{
+      margin-top: 10%;
+  }

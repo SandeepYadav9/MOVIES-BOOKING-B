@@ -1,51 +1,72 @@
 import React, { useState } from "react";
 import "./Register.css";
 function Register(props) {
-    const [copyEmail, setCopyEmail] = useState({
-        email: "Email",
-        password: "Password",
-      });
-    
-      const onChangeInput = (e) => {
-        let copyOfLoginState = { ...copyEmail };
-        copyOfLoginState[e.target.name] = e.target.value;
-        setCopyEmail(copyOfLoginState);
-      };
+  const [copyEmail, setCopyEmail] = useState({
+    fullName: "Full Name*",
+    lastName: "Last Name*",
+    email: "Email*",
+    password: "password",
+    contact: "Contact No*",
+  });
 
-//   const onRegisterHandler = (e) => {
-//     let copyOfRegister = { ...register };
-//     copyOfRegister[e.target.name] = e.target.value;
-//     setRegister(copyOfRegister);
-//   };
+  const onChangeInput = (e) => {
+    let copyOfLoginState = { ...copyEmail };
+    copyOfLoginState[e.target.name] = e.target.value;
+    setCopyEmail(copyOfLoginState);
+  };
+  //   const clickHandler = () => {
+  //     setClosed(!closed);
+  //   };
   return (
     <div>
-      <h4 className="login">Login</h4>
-
-      <div className="container">
+      <div className="containerReg">
         <div>
           <form action="" className="form">
             <input
               type="text"
-              name="email"
+              name="FullName"
               onChange={onChangeInput}
-              value={copyEmail.email}
+              value={copyEmail.fullName}
               className="input-control"
             />
             <br />
             <br />
             <input
-              name="password"
-              type="password"
+              name="lastName*"
+              type="text"
               onChange={onChangeInput}
-              value={copyEmail.password}
+              value={copyEmail.lastName}
               className="input-control"
             />
             <br />
             <br />
-            <span className="component-body-container ">
-              <button className="custom-btn add-btn">Login</button>
+            <input
+              name="Email"
+              type="email"
+              onChange={onChangeInput}
+              value={copyEmail.email}
+              className="input-control"
+            />{" "}
+            <br /> <br />
+            <input
+              name="Password"
+              type="password"
+              onChange={onChangeInput}
+              value={copyEmail.password}
+              className="input-control"
+            />{" "}
+            <br /> <br />
+            <input
+              name="Contact"
+              type="text"
+              onChange={onChangeInput}
+              value={copyEmail.contact}
+              className="input-control"
+            />{" "}
+            <br /> <br />
+            <span className="component-body-container-reg ">
+              <button className="custom-btn-reg reg-btn">Register</button>
             </span>
-            <p>Don't have an account Yet Register</p>
           </form>
         </div>
       </div>

@@ -1,39 +1,40 @@
-
 .login {
-    text-align: center;
-   
-  }
-  
-  form,
-  button {
-    text-align: center;
-  }
-  .component-body-container {
-    padding: 20px;
-  }
-  .input-control {
-    width: 300px;
-    min-width: 100px;
-    padding: 10px 15px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    outline: none;
-  }
-  .custom-btn {
-    padding: 10px;
-    border: none;
-    margin-right: 10px;
-    text-transform: uppercase;
-    width: 80px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .add-btn {
-    background: #7ab97a;
-    color: #fff;
-  }
+  text-align: center;
+}
+
+form,
+button {
+  text-align: center;
+}
+.component-body-container {
+  padding: 20px;
+}
+.input-control {
+  width: 300px;
+  min-width: 100px;
+  padding: 10px 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  outline: none;
+}
+.custom-btn {
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  text-transform: uppercase;
+  width: 80px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-btn {
+  background: #7ab97a;
+  color: #fff;
+}
+.closed-btn {
+  margin-left: -10%;
+}

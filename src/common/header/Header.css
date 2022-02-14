@@ -1,30 +1,34 @@
 .header {
-    background-color: #222;
-    height: 36px;
-    padding-top: 8px 32px 8px 16px;
+  background-color: #222;
+  height: 36px;
+  padding-top: 8px 32px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.image {
+  background-color: #ff7f7f;
+  height: 35px;
+  margin-left: 10px;
+  animation-name: linear;
+  animation-duration: 8s;
+}
+@keyframes image {
+  from {
+    transform: rotate(10deg);
   }
-  .image {
-    background-color: #ff7f7f;
-    height: 35px;
-    margin-left: 10px;
-    animation-name: linear;
-    animation-duration: 8s;
+  to {
+    transform: rotate(360deg);
   }
-  @keyframes image {
-    from {
-      transform: rotate(10deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  .upcomming-Movies {
-    background-color: #ff9999;
-    padding: 8px;
-    text-align: center;
-    font-size: 1rem;
-  }
-  
+}
+.upcomming-Movies {
+  background-color: #ff9999;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
 .modal {
   top: 10%;
   left: 35%;
@@ -43,4 +47,10 @@
   bottom: 0;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.75);
+}
+.register {
+  margin: 34% 35%;
+}
+.color {
+  background-color: #ccc;
 }

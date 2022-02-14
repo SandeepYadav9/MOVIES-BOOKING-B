@@ -11,10 +11,11 @@ function Login(props) {
     copyOfLoginState[e.target.name] = e.target.value;
     setCopyEmail(copyOfLoginState);
   };
+  //   const clickHandler = () => {
+  //     setClosed(!closed);
+  //   };
   return (
     <div>
-      <h4 className="login">Login</h4>
-
       <div className="container">
         <div>
           <form action="" className="form">
@@ -37,9 +38,8 @@ function Login(props) {
             <br />
             <br />
             <span className="component-body-container ">
-              <button className="custom-btn add-btn">Login</button>
+              <button className="custom-btn login-btn">Login</button>
             </span>
-            <p>Don't have an account Yet Register</p>
           </form>
         </div>
       </div>
